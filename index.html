@@ -6,26 +6,25 @@
 <title>Rivyon EV</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<nav>
- <h2>RIVYON ⚡</h2>
+<nav class="nav">
+  <h2>RIVYON ⚡</h2>
   <div>
-    <a href="index.html">Home</a>
-    <a href="product.html">Product</a>
-    <a href="about.html">About</a>
-    <a href="business.html">Business</a>
-    <a href="contact.html">Contact</a>
+    <a href="#">Home</a>
+    <a href="#product">Product</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
   <div class="overlay"></div>
-  <div class="hero-content fade-in">
+  <div class="hero-content">
     <h1>Smart mobility for everyday India</h1>
     <p>License-free • 70km range • Affordable EV</p>
     <button class="btn">Pre-book Now</button>
@@ -33,13 +32,13 @@
 </section>
 
 <!-- PRODUCT -->
-<section class="section reveal">
+<section class="section" id="product">
   <h2>Our EV Scooter</h2>
-  <img src="images/scooter.jpg" alt="EV Scooter" class="product-img">
+  <img src="images/scooter.jpg" class="product-img">
 </section>
 
 <!-- FEATURES -->
-<section class="section dark reveal">
+<section class="section glass">
   <h2>Why Rivyon EV?</h2>
   <div class="grid">
     <div class="card">⚡ Low Cost</div>
@@ -48,17 +47,17 @@
   </div>
 </section>
 
-<!-- USERS -->
-<section class="section reveal">
+<!-- ABOUT -->
+<section class="section" id="about">
   <h2>Built for India</h2>
-  <img src="images/users.jpg" alt="EV Users" class="user-img">
+  <p>Designed for students, delivery riders and daily commuters.</p>
 </section>
 
-<footer>
-  <p>© 2026 Rivyon EV</p>
-</footer>
-
-<script src="js/main.js"></script>
+<!-- CONTACT -->
+<section class="section glass" id="contact">
+  <h2>Get Early Access</h2>
+  <button class="btn">Join Waitlist</button>
+</section>
 
 </body>
 </html>
