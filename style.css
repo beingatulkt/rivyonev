@@ -1,0 +1,110 @@
+body {
+  background: red;
+}
+body {
+  margin:0;
+  font-family:'Inter', sans-serif;
+  background:#0b0b0b;
+  color:white;
+}
+
+nav {
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  position:fixed;
+  width:100%;
+  z-index:100;
+}
+
+nav a {
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+.hero {
+  height:100vh;
+  background:url('../images/hero.jpg') center/cover no-repeat;
+  position:relative;
+}
+
+.overlay {
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+}
+
+.hero h1 {
+  font-size:50px;
+  font-family:Poppins;
+}
+
+.btn {
+  padding:12px 25px;
+  background:#00D084;
+  border:none;
+  cursor:pointer;
+}
+
+.section {
+  padding:100px 20px;
+  text-align:center;
+}
+
+.dark {
+  background:#111;
+}
+
+.grid {
+  display:flex;
+  justify-content:center;
+  gap:20px;
+}
+
+.card {
+  background:#222;
+  padding:20px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-10px);
+}
+
+.product-img, .user-img {
+  width:100%;
+  max-width:500px;
+  margin-top:20px;
+  border-radius:10px;
+}
+
+.fade-in {
+  animation:fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+.reveal {
+  opacity:0;
+  transform:translateY(50px);
+  transition:1s;
+}
+
+.reveal.active {
+  opacity:1;
+  transform:translateY(0);
+}
